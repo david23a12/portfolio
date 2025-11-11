@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David - Full Stack Developer</title>
+  <style>
+    body { 
+      font-family: 'Segoe UI', sans-serif; 
+      margin: 0; 
+      background: #f4f7fa; 
+      color: #333; 
+      line-height: 1.6;
+    }
+    .container { 
+      max-width: 900px; 
+      margin: 2rem auto; 
+      padding: 2rem; 
+      background: white; 
+      border-radius: 16px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    }
+    h1 { 
+      color: #667eea; 
+      text-align: center; 
+      font-size: 2.2rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .project { 
+      margin: 2.5rem 0; 
+      padding: 1.8rem; 
+      border-left: 6px solid #667eea; 
+      background: #f8f9ff; 
+      border-radius: 0 12px 12px 0;
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h2 {
+      margin-top: 0;
+      color: #667eea;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn { 
+      display: inline-block; 
+      padding: 0.8rem 1.6rem; 
+      background: #667eea; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 8px; 
+      margin: 0.4rem 0.4rem 0.4rem 0;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn:hover { 
+      background: #5a6fd8; 
+      transform: translateY(-2px);
+    }
+    .tech {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0.8rem 0;
+    }
+    .contact {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+    footer { 
+      text-align: center; 
+      margin-top: 3rem; 
+      color: #777; 
+      font-size: 0.9rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background: #e0e7ff;
+      color: #667eea;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>David - Full Stack Developer</h1>
+    <p class="subtitle"><strong>Bootcamp Full Stack 2025</strong> | React + FastAPI + Python + GitHub Actions + Streamlit + Vercel + Render</p>
+
+    <!-- PROYECTO 1: ToDo App -->
+    <div class="project">
+      <h2>ToDo App Full Stack con Autenticación</h2>
+      <p>App completa con login JWT, tareas privadas por usuario, persistencia en SQLite, deploy en Vercel + Render.</p>
+      <p class="tech"><strong>Tecnologías:</strong> React, FastAPI, SQLAlchemy, Argon2, JWT, Vercel, Render</p>
+      <a href="https://ruta1-fullstack.vercel.app" class="btn" target="_blank">Ver App</a>
+      <a href="https://ruta1-fullstack.onrender.com/docs" class="btn" target="_blank">API Docs</a>
+      <a href="https://github.com/david23a12/ruta1-fullstack" class="btn" target="_blank">Código</a>
+    </div>
+
+    <!-- PROYECTO 2: LaLiga EV+ Bot -->
+    <div class="project">
+      <h2>LaLiga EV+ Alert Bot <span class="badge">AUTOMATIZACIÓN + DATA</span></h2>
+      <p>Bot 24/7 que analiza rachas en LaLiga (sin empates, goles pares/impares), calcula <strong>EV+</strong> y envía alertas en tiempo real por Telegram.</p>
+      <p>Incluye <strong>scraping con API oficial</strong>, <strong>GitHub Actions</strong> para automatización diaria, <strong>dashboard interactivo</strong> y <strong>backtest ROI</strong> de la temporada 2024-25.</p>
+      <p class="tech"><strong>Tecnologías:</strong> Python, Pandas, Requests, GitHub Actions, Streamlit, Telegram Bot, API Football-Data</p>
+      
+      <a href="https://laliga-evalert-public-1.streamlit.app" class="btn" target="_blank">Dashboard Web</a>
+      <a href="https://github.com/David23a12/laliga-evalert-public" class="btn" target="_blank">Repositorio</a>
+      <a href="https://t.me/+AAAAAE3Vv1b0k6h0" class="btn" target="_blank">Canal Telegram (Demo)</a>
+      
+      <div style="margin-top: 1rem; padding: 1rem; background: #e0f2fe; border-radius: 8px; font-size: 0.95rem;">
+        <strong>Backtest 2024-25:</strong> 16 apuestas | EV+ medio: <strong>+14.0%</strong> | ROI: -16.88% (varianza en muestra pequeña)<br>
+        <em>Estrategia con valor esperado positivo a largo plazo.</em>
+      </div>
+    </div>
+
+    <div class="contact">
+      <p><strong>Contacto:</strong> david@example.com | 
+      <a href="https://linkedin.com/in/david23a12" target="_blank" style="color: #667eea; text-decoration: none;">LinkedIn</a></p>
+    </div>
+  </div>
+
+  <footer>© 2025 David - Full Stack Developer | Bootcamp Ironhack</footer>
+</body>
+</html>
